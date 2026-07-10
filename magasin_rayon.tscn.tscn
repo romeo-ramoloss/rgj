@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cn67d63qdv3y3"]
+
+[ext_resource type="Texture2D" uid="uid://cbsp17358vth7" path="res://magasin.rayon.png" id="1_2t5t2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5pnay"]
+size = Vector2(128, 74)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p272r"]
+size = Vector2(41, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orett"]
+size = Vector2(41, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h1jy0"]
+size = Vector2(36, 10)
+
+[node name="Node2D" type="Node2D" unique_id=388000730]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1712714194]
+position = Vector2(0, 8)
+scale = Vector2(1, 1.25)
+texture = ExtResource("1_2t5t2")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=426416281]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1548774910]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_5pnay")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=375458853]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=447229079]
+position = Vector2(41, 48)
+shape = SubResource("RectangleShape2D_p272r")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=1998956467]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=1805684219]
+position = Vector2(-2, 48)
+shape = SubResource("RectangleShape2D_orett")
+
+[node name="Area2D3" type="Area2D" parent="." unique_id=2107722443]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" unique_id=1053378292]
+position = Vector2(-44, 48)
+shape = SubResource("RectangleShape2D_h1jy0")

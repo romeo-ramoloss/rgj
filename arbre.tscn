@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://wx184clcdi6r"]
+
+[ext_resource type="Texture2D" uid="uid://g537mfjj57dm" path="res://arbre.png" id="1_gablb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p272r"]
+size = Vector2(39, 73)
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1214773757]
+position = Vector2(-7, -107)
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1238352033]
+position = Vector2(9.5, 168.5)
+shape = SubResource("RectangleShape2D_p272r")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1935429895]
+position = Vector2(0.5, -85.5)
+texture = ExtResource("1_gablb")

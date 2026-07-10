@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dehkobeutjimt"]
+
+[ext_resource type="Texture2D" uid="uid://dqvmilx1xlhex" path="res://magaz 1.png" id="1_e4lio"]
+[ext_resource type="Texture2D" uid="uid://bkwwec1105824" path="res://magaz 2.png" id="2_vmkp4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p272r"]
+size = Vector2(88.5, 131.125)
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1297895795]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=481284345]
+position = Vector2(-50, 40.4375)
+shape = SubResource("RectangleShape2D_p272r")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1847902992]
+position = Vector2(111, 41.875)
+shape = SubResource("RectangleShape2D_p272r")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1240997096]
+position = Vector2(32, 40)
+texture = ExtResource("1_e4lio")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1256836790]
+visible = false
+position = Vector2(34, 40)
+texture = ExtResource("2_vmkp4")

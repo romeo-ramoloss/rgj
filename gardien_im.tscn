@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cfwxjga1mcvia"]
+
+[ext_resource type="Script" uid="uid://bjqiy2ejkm8mj" path="res://gardien.gd" id="1_ajbxg"]
+[ext_resource type="Texture2D" uid="uid://dpkixw64co68l" path="res://gardien_d'imeuble.png" id="2_k5pdh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5pnay"]
+size = Vector2(480, 20)
+
+[node name="Node2D" type="Node2D" unique_id=1319858601]
+script = ExtResource("1_ajbxg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1016743221]
+position = Vector2(184, -1)
+texture = ExtResource("2_k5pdh")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1996721254]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1302286886]
+position = Vector2(-38, 9)
+shape = SubResource("RectangleShape2D_5pnay")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ek72nvob1l72"]
+
+[ext_resource type="Texture2D" uid="uid://cbsp17358vth7" path="res://magasin.rayon.png" id="1_ckkt3"]
+
+[node name="Magasin_rayon" type="Sprite2D" unique_id=1197030091]
+position = Vector2(321, 167)
+texture = ExtResource("1_ckkt3")
